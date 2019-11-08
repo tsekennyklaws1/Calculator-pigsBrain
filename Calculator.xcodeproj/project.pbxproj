@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EEF799C2B655C4100983CE2 /* StrawberryCalcLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF799B2B655C4100983CE2 /* StrawberryCalcLogic.swift */; };
+		0EEF799E2B65F2AA00983CE2 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF799D2B65F2AA00983CE2 /* SwitchViewController.swift */; };
 		ADB196212146629E00C5317F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB196202146629E00C5317F /* AppDelegate.swift */; };
-		ADB196232146629E00C5317F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB196222146629E00C5317F /* ViewController.swift */; };
+		ADB196232146629E00C5317F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB196222146629E00C5317F /* CalculatorViewController.swift */; };
 		ADB196262146629E00C5317F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB196242146629E00C5317F /* Main.storyboard */; };
 		ADB19628214662A000C5317F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB19627214662A000C5317F /* Assets.xcassets */; };
 		ADB1962B214662A000C5317F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB19629214662A000C5317F /* LaunchScreen.storyboard */; };
+		ADC29C772151388C00DE11EC /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC29C762151388C00DE11EC /* CalculatorLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADB1961D2146629E00C5317F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EEF799B2B655C4100983CE2 /* StrawberryCalcLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrawberryCalcLogic.swift; sourceTree = "<group>"; };
+		0EEF799D2B65F2AA00983CE2 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		ADB1961D2146629E00C5317F /* Pigs Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pigs Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB196202146629E00C5317F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADB196222146629E00C5317F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADB196222146629E00C5317F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		ADB196252146629E00C5317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADB19627214662A000C5317F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB1962A214662A000C5317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB1962C214662A000C5317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC29C762151388C00DE11EC /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 		ADB1961E2146629E00C5317F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADB1961D2146629E00C5317F /* Calculator.app */,
+				ADB1961D2146629E00C5317F /* Pigs Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				ADB196202146629E00C5317F /* AppDelegate.swift */,
-				ADB196222146629E00C5317F /* ViewController.swift */,
-				ADB196242146629E00C5317F /* Main.storyboard */,
+				ADC29C79215138A500DE11EC /* Controller */,
+				ADC29C782151389D00DE11EC /* Model */,
+				ADC29C7A215138B600DE11EC /* View */,
 				ADB19627214662A000C5317F /* Assets.xcassets */,
 				ADB19629214662A000C5317F /* LaunchScreen.storyboard */,
 				ADB1962C214662A000C5317F /* Info.plist */,
@@ -64,12 +71,38 @@
 			path = Calculator;
 			sourceTree = "<group>";
 		};
+		ADC29C782151389D00DE11EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADC29C762151388C00DE11EC /* CalculatorLogic.swift */,
+				0EEF799B2B655C4100983CE2 /* StrawberryCalcLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADC29C79215138A500DE11EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADB196222146629E00C5317F /* CalculatorViewController.swift */,
+				0EEF799D2B65F2AA00983CE2 /* SwitchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ADC29C7A215138B600DE11EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB196242146629E00C5317F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADB1961C2146629E00C5317F /* Calculator */ = {
+		ADB1961C2146629E00C5317F /* Pigs Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Pigs Calculator" */;
 			buildPhases = (
 				ADB196192146629E00C5317F /* Sources */,
 				ADB1961A2146629E00C5317F /* Frameworks */,
@@ -79,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = "Pigs Calculator";
 			productName = Calculator;
-			productReference = ADB1961D2146629E00C5317F /* Calculator.app */;
+			productReference = ADB1961D2146629E00C5317F /* Pigs Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -90,12 +123,14 @@
 		ADB196152146629E00C5317F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "London App Brewery";
+				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = tsekennykl;
 				TargetAttributes = {
 					ADB1961C2146629E00C5317F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -112,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADB1961C2146629E00C5317F /* Calculator */,
+				ADB1961C2146629E00C5317F /* Pigs Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB196232146629E00C5317F /* ViewController.swift in Sources */,
+				ADB196232146629E00C5317F /* CalculatorViewController.swift in Sources */,
 				ADB196212146629E00C5317F /* AppDelegate.swift in Sources */,
+				0EEF799E2B65F2AA00983CE2 /* SwitchViewController.swift in Sources */,
+				0EEF799C2B655C4100983CE2 /* StrawberryCalcLogic.swift in Sources */,
+				ADC29C772151388C00DE11EC /* CalculatorLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +226,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -199,6 +238,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -213,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +289,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -260,6 +301,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -268,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,15 +325,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = CKESP3MPW2;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsekennykl.pigCalculator123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,15 +343,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = CKESP3MPW2;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsekennykl.pigCalculator123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -326,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Pigs Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB19630214662A000C5317F /* Debug */,
