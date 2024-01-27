@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADB1961D2146629E00C5317F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB1961D2146629E00C5317F /* Pigs Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pigs Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB196202146629E00C5317F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB196222146629E00C5317F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADB196252146629E00C5317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		ADB1961E2146629E00C5317F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADB1961D2146629E00C5317F /* Calculator.app */,
+				ADB1961D2146629E00C5317F /* Pigs Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADB1961C2146629E00C5317F /* Calculator */ = {
+		ADB1961C2146629E00C5317F /* Pigs Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Pigs Calculator" */;
 			buildPhases = (
 				ADB196192146629E00C5317F /* Sources */,
 				ADB1961A2146629E00C5317F /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = "Pigs Calculator";
 			productName = Calculator;
-			productReference = ADB1961D2146629E00C5317F /* Calculator.app */;
+			productReference = ADB1961D2146629E00C5317F /* Pigs Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "London App Brewery";
+				ORGANIZATIONNAME = tsekennykl;
 				TargetAttributes = {
 					ADB1961C2146629E00C5317F = {
 						CreatedOnToolsVersion = 10.0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADB1961C2146629E00C5317F /* Calculator */,
+				ADB1961C2146629E00C5317F /* Pigs Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -312,13 +312,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = CKESP3MPW2;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsekennykl.pigCalculator123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,13 +330,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = CKESP3MPW2;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsekennykl.pigCalculator123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		ADB1962F214662A000C5317F /* Build configuration list for PBXNativeTarget "Pigs Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB19630214662A000C5317F /* Debug */,
