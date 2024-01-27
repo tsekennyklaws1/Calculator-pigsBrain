@@ -17,6 +17,7 @@ struct CalculatorLogic {
     mutating func setNumber(_ number: Double) {
         self.number = number
     }
+
     mutating func handleOtherKey(symbol: String) -> Double? {
         if let n = number {
             switch symbol {
@@ -89,5 +90,6 @@ struct CalculatorLogic {
         }
         
     
+
     
 }
